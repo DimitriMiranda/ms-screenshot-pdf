@@ -11,13 +11,13 @@ class ScreenShotController
 
     public function __construct(ScreenShotService $screenShotService)
     {
-        $this->soapServicePje = $screenShotService;
+        $this->screenShotService = $screenShotService;
     }
 
     public function screenShotFromPdf(Request $request)
     {
         return response()->json(
-        $this->soapServicePje->screenShotFromPdf(
+        $this->screenShotService->screenShotFromPdf(
           $request->input('file_base64'),
           $request->input('screenshotnumber')
         )
