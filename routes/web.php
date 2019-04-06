@@ -1,5 +1,6 @@
 <?php
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -10,6 +11,19 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/teste-pdf/{filename}', function ($filename) {
+    $filename = 'temp1554592139.jpg';
+    $path = storage_path('app/temp-files/').$filename;
+
+    return response()->file($path);
+});
+
+Route::get('/phpinfo', function () {
+    phpinfo();
+
+    //return view('welcome');
+});
 
 Route::get('/', function () {
     return view('welcome');

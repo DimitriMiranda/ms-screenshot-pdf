@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Filesystem Disk
@@ -42,10 +41,16 @@ return [
     */
 
     'disks' => [
-
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
+        ],
+
+        'temp-files' => [
+            'driver' => 'local',
+            'root' => storage_path('app/temp-files'),
+            'url' => env('APP_URL').'/storage',
+            'visibility' => 'public',
         ],
 
         'public' => [
@@ -62,7 +67,5 @@ return [
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
         ],
-
     ],
-
 ];
