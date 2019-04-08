@@ -4,9 +4,8 @@
 
 Micro servicie ms-screenshot-pdf. 
 
-## Learning Laravel
+## Routes and funtions
 
-Routes and funtions 
 /* return the folder with fisical file */
 (Yourserver/render-file/{file_type}/{name}) 
 
