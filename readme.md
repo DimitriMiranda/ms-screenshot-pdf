@@ -1,10 +1,7 @@
 
 
-<<<<<<< HEAD
+
 ## Ms-screenshot DPE
-=======
-## ms-screenshot DPE
->>>>>>> dcb501581dc0aecbdb71b40869b81fcfcc80c34c
 
 Micro servicie ms-screenshot-pdf. 
 This service was developed by time development CMO.
