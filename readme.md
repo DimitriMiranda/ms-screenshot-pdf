@@ -5,7 +5,7 @@
 
 Micro servicie ms-screenshot-pdf. 
 This service was developed by time development CMO.
-## Learning Laravel
+
 
 ### Routes and funtions 
 
