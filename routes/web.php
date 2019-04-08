@@ -18,6 +18,8 @@ Route::get('/teste-pdf/{filename}', function ($filename) {
 
     return response()->file($path);
 });
+//$file_type, $name
+$router->get('/render-file/{file_type}/{name}', 'RenderFileController@renderFile');
 
 Route::get('/phpinfo', function () {
     phpinfo();

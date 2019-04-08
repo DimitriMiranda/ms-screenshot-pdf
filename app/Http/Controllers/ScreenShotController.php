@@ -17,10 +17,10 @@ class ScreenShotController
     public function screenShotFromPdf(Request $request)
     {
         return response()->json(
-        $this->screenShotService->screenShotFromPdf(
-          $request->input('file_base64'),
-          $request->input('screenshotnumber')
-        )
-      );
+      $this->screenShotService->screenShotFromPdf(
+        $request->input('file_base64'),
+        $request->input('screenshotnumber')
+      )
+    );
     }
 }
