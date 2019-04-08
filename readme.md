@@ -7,6 +7,7 @@ Micro servicie ms-screenshot-pdf.
 ## Routes and funtions
 
 /* return the folder with fisical file */
+[Yourserver/render-file/{file_type}/{name}]
 (Yourserver/render-file/{file_type}/{name}) 
 
 
