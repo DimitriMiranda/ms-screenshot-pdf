@@ -31,7 +31,7 @@ class RenderFileService
             $reponse = new \stdClass();
             $reponse->file_name = $this->file_name;
             $reponse->file_type = $file_type;
-            $reponse->acesss_route = request()->getSchemeAndHttpHost() . "render-file/$file_type/$this->file_name";
+            $reponse->acesss_route = request()->getSchemeAndHttpHost() . "/render-file/$file_type/$this->file_name";
             return $reponse;
         } catch (\Throwable $th) {
             throw $th;

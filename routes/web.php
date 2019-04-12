@@ -1,5 +1,5 @@
 <?php
-
+header('Access-Control-Allow-Origin: *');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +18,11 @@ Route::get('/phpinfo', function () {
     phpinfo();
 });
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+$router->get('/consulta-processo-pje/{numeroProcesso}', 'SoapController@consultarProcessoPje');
+
+$router->get('/consulta-itempublico-cnj/{tipoTabela}/{tipoPesquisa}/{valorPesquisa}', 'SoapController@consultarItemPublicoCnj');

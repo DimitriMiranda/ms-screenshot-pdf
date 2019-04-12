@@ -9,8 +9,16 @@ This service was developed by time development CMO.
 
 ### Routes and funtions 
 
-#### Return the folder with fisical file 
-(Yourserver/render-file/{file_type}/{name}) 
+
+
+###### Create a temp file 
+Method post  Yourserver/api/screen-shot-from-pdf/
+Param: file_type (pdf), file_data (file on encode base64) 
+
+api/screen-shot-from-pdf/
+
+###### Return the folder with fisical file 
+Yourserver/render-file/{file_type}/{name} 
 
 
 ## License
